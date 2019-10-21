@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".SignUp">
+
+<ImageView
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:scaleType="fitXY"
+    android:src="@drawable/header_login_signup" />
+
+<ImageView
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="70sp"
+    android:scaleType="fitXY"
+    android:layout_alignParentBottom="true"
+    android:src="@drawable/footer_login_signup" />
+
+<TextView
+    android:id="@+id/create_account_logo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/header"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="-53dp"
+    android:text="Create Account"
+    android:textSize="40sp"
+    android:textStyle="bold" />
+
+<EditText
+    android:id="@+id/edtPhone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/create_account_logo"
+    android:layout_centerHorizontal="true"
+    android:layout_marginHorizontal="30sp"
+    android:layout_marginBottom="-90dp"
+    android:background="@drawable/rounded_border"
+    android:ems="10"
+    android:hint="Phone Number"
+    android:inputType="phone"
+    android:maxLength="10"
+    android:padding="10sp"
+    android:textSize="20sp" />
+
+<EditText
+    android:id="@+id/edtHostelId"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/edtPhone"
+    android:layout_centerHorizontal="true"
+    android:layout_marginHorizontal="30sp"
+    android:layout_marginBottom="-68dp"
+    android:background="@drawable/rounded_border"
+    android:ems="10"
+    android:hint="Hostel Roll Number"
+    android:inputType="number"
+    android:padding="10sp"
+    android:textSize="20sp" />
+
+<EditText
+    android:id="@+id/edtMessNo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/edtHostelId"
+    android:layout_centerHorizontal="true"
+    android:layout_marginHorizontal="30sp"
+    android:layout_marginBottom="-68dp"
+    android:background="@drawable/rounded_border"
+    android:ems="10"
+    android:maxLength="1"
+    android:hint="Mess Number"
+    android:inputType="number"
+    android:padding="10sp"
+    android:textSize="20sp" />
+
+<EditText
+    android:id="@+id/edtName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/edtMessNo"
+    android:layout_centerHorizontal="true"
+    android:layout_marginHorizontal="30sp"
+    android:layout_marginBottom="-68dp"
+    android:background="@drawable/rounded_border"
+    android:ems="10"
+    android:hint="Name"
+    android:inputType="text"
+    android:padding="10sp"
+    android:textSize="20sp" />
+
+<EditText
+    android:id="@+id/edtPassword"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/edtName"
+    android:layout_centerHorizontal="true"
+    android:layout_marginHorizontal="30sp"
+    android:layout_marginBottom="-68dp"
+    android:background="@drawable/rounded_border"
+    android:ems="10"
+    android:hint="Password"
+    android:inputType="textPassword"
+    android:padding="10sp"
+    android:textSize="20sp" />
+
+<EditText
+    android:id="@+id/edtRoomNo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@+id/edtPassword"
+    android:layout_centerHorizontal="true"
+    android:layout_marginHorizontal="30sp"
+    android:layout_marginBottom="-68dp"
+    android:background="@drawable/rounded_border"
+    android:ems="10"
+    android:hint="Room Number"
+    android:inputType="text"
+    android:padding="10sp"
+    android:textSize="20sp" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/forgotPasswordText"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignRight="@id/footer"-->
+<!--        android:layout_alignBottom="@id/passwordInput"-->
+<!--        android:layout_marginStart="39dp"-->
+<!--        android:layout_marginLeft="39dp"-->
+<!--        android:layout_marginTop="39dp"-->
+<!--        android:layout_marginEnd="39dp"-->
+<!--        android:layout_marginRight="38dp"-->
+<!--        android:layout_marginBottom="-29dp"-->
+<!--        android:text="Forgot password?"-->
+<!--        android:textSize="15sp" />-->
+
+
+<Button
+    android:id="@+id/btnSignUp"
+    style="@style/Widget.AppCompat.Button.Colored"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignBottom="@id/edtRoomNo"
+    android:layout_marginHorizontal="100dp"
+    android:layout_marginBottom="-75dp"
+    android:background="@drawable/rounded_button"
+    android:lineSpacingExtra="36sp"
+    android:padding="12dp"
+    android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+    android:textColor="#fff"
+    android:textSize="23sp"
+    android:textStyle="normal|bold"
+    android:typeface="sans"
+    android:text="Register" />
+
+</RelativeLayout>
